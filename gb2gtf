@@ -5,15 +5,6 @@ Convert genbank to gtf.
 USAGE:
 cat file.gb | gb2gtf.py > file.gtf
 
-NOTE:
-It's designed to work with gb files coming from GenBank. gene is used as gene_id and transcript_id (locus_tag if gene not present).
-Only entries having types in allowedTypes = ['gene','CDS','tRNA','tmRNA','rRNA','ncRNA'] are stored in GTF. Need to include exon processing.
-No frame info is processed. Need to be included in order to process genes having introns!
-
-AUTHOR:
-Leszek Pryszcz
-lpryszcz@crg.eu
-
 Version 0.1
 
 """
