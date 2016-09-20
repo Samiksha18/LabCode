@@ -1,0 +1,19 @@
+#Samiksha Borkar
+#!/usr/bin/perl
+use strict;
+use warnings;
+use Bio::Seq;
+use Bio::SeqIO;
+
+#Take commandline argument for test file
+my $inputfile = $ARGV[0];
+#Read test file
+my $infile = Bio::SeqIO->new(-file=> $inputfile, -format=> 'fasta');
+#write output tp gb file
+my $outfile = Bio::SeqIO->new(-file=> ">sequence_id.gb" , -format=>'genbank');
+
+while( my $inseq = $infile->next_seq){
+    $outfile->write_seq($inseq);
+}
+
+exit;
