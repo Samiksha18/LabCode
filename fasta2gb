@@ -1,4 +1,7 @@
-#Samiksha Borkar
+#Author:Samiksha Borkar
+
+#Note: This script can take cmd line arg to read the fasta file and convert it to genebank file.
+
 #!/usr/bin/perl
 use strict;
 use warnings;
